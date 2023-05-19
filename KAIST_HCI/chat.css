@@ -1,0 +1,134 @@
+
+.user-conversation{
+/* user_conversation */
+
+
+box-sizing: border-box;
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+
+padding: 24px 276px 36px 200px;
+
+gap: 24px;
+
+/*width: 1180px;
+height: 108px;
+*/
+background: #FFFFFF;
+border-bottom: 1px solid #E5E5E5;
+
+/* Inside auto layout */
+
+
+}
+
+
+.user-text{
+/*width: 650px;
+height: 48px;
+*/
+font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 24px;
+/* or 160% */
+
+
+color: #000000;
+
+}
+
+
+
+.gpt-conversation{
+box-sizing: border-box;
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 24px 276px 36px 200px;
+gap: 24px;
+
+background: #F7F7F8;
+border-bottom: 1px solid #E5E5E5;
+
+
+}
+
+.gpt-text{
+font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 28px;
+/* or 187% */
+
+
+color: #000000;
+
+}
+
+.gpt-conversation-icons{
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 12px;
+
+}
+
+.regenerate-button{
+    box-sizing: border-box;
+    position: relative;
+    z-index: 2;
+    /* Auto layout */
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 12px;
+    gap: 8px;
+    
+    position: absolute;
+
+    top: -49;
+    
+    background: #FFFFFF;
+    border: 1px solid #E5E5E5;
+    border-radius: 4px;
+}
+
+.regenerate-button-icon{
+    width: 12px;
+    height: 12px;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.regenerate-button-text{
+
+    width: 133px;
+    height: 18px;
+    
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    /* identical to box height */
+    
+    
+    color: #40414F;
+}

@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css?family=Inter:400,500|Noto+Sans:400,500");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500&display=swap");
+
+body {
+  margin: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.main {
+  display: flex;
+  align-items: flex-start;
+  background-color: white;
+  height: 100vh;
+  width: 100%;
+  min-height: 1024px;
+}
+
+.sidebar {
+  background-color: #202123;
+  width: 260px;
+  height: 100%;
+}
+
+.threads {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.bottom-section {
+  position: absolute;
+  width: 1180px;
+  height: 106px;
+  left: 260px;
+  top: 918px;
+  background-color: white;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar-menu {
+  box-sizing: border-box;
+  width: 244px;
+  margin: 0 8px;
+  gap: 8px;
+  padding: 14px 12px;
+
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+}
+
+.sidebar-text {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #ffffff;
+}
+
+.sidebar-icon {
+  height: 16px;
+  width: 16px;
+}
+
+.new-chat {
+  border: 1px solid;
+  border-color: rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  margin-top: 8px;
+}
+
+.badge {
+  background: #fde68a;
+  padding: 2px 6px;
+  border-radius: 6px;
+
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #000000;
+}
+
+.sidebar-divider {
+  box-sizing: content-box;
+  width: 244px;
+  height: 1px;
+  margin: 8px;
+  margin-top: 761px;
+
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.message-input {
+  box-sizing: border-box;
+  width: 768px;
+  height: 50px;
+  margin-top: 9px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 17px 14px;
+  gap: 10px;
+
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+}
+
+.message-input-text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 16px;
+
+  color: #8e8ea0;
+
+  flex-grow: 1;
+  border: none;
+  outline: none;
+}
+
+.warning-message {
+  box-sizing: border-box;
+  width: 717px;
+  height: 16px;
+  margin-top: 18px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+
+  text-align: center;
+
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.chatting-section {
+  position: relative;
+  width: 1180px;
+  height: 918px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+}
+
+.user-icon {
+  box-sizing: border-box;
+  background: #3753b6;
+  width: 30px;
+  height: 30px;
+  border-radius: 2px;
+
+  padding: 8px 10px;
+}
+
+.user-icon-text {
+  font-family: "Noto Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 14px;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.gpt-icon {
+  box-sizing: border-box;
+  background: #10a37f;
+  width: 30px;
+  height: 30px;
+  border-radius: 2px;
+
+  padding: 4px;
+}
+
+

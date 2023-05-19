@@ -1,0 +1,135 @@
+<head>
+  <!-- Add CSS file -->
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="chat.css" />
+  
+  <!-- Add jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="main.js"></script>
+</head>
+
+<body>
+  <div class="main">
+    <div class="sidebar">
+      <div class="threads">
+        <div class="sidebar-menu new-chat">
+          <img class="sidebar-icon" src="images/plus.svg" alt="icon/plus" />
+          <div class="sidebar-text">New chat</div>
+        </div>
+        <div class="sidebar-menu">
+          <img class="sidebar-icon" src="images/message-square.svg" alt="message-square" />
+          <div class="sidebar-text">Importance of HCI</div>
+        </div>
+        <div class="sidebar-menu">
+          <img class="sidebar-icon" src="images/message-square.svg" alt="message-square" />
+          <div class="sidebar-text">KAIST Researcher</div>
+        </div>
+      </div>
+
+      <div class="sidebar-divider"></div>
+
+      <div class="sidebar-menu">
+        <img class="sidebar-icon" src="images/user.svg" alt="user" />
+        <div class="upgrade-to-plus sidebar-text">Upgrade to Plus</div>
+        <div class="badge">NEW</div>
+      </div>
+
+      <div class="sidebar-menu">
+        <img class="sidebar-icon" src="images/log-out.svg" alt="log-out" />
+        <div class="log-out-1 sidebar-text">Log out</div>
+      </div>
+    </div>
+
+    <div id="hw2__chat-history" class="chatting-section">
+      <div class="user-conversation">
+        <div class="user-icon">
+          <div class="user-icon-text">K</div>
+        </div>
+        <div class="user-text">
+          What is the definition of HCI? Why should I learn this? Please answer these questions in 2
+          very short paragraphs.
+        </div>
+      </div>
+      <div class="gpt-conversation">
+        <div class="gpt-icon">
+          <img class="openai-icon" src="images/openai-icon.svg" alt="logos:openai-icon" />
+        </div>
+        <div class="gpt-text">
+          HCI stands for Human-Computer Interaction, which is the study of how humans interact with
+          computers and how computers can be designed to be more user-friendly. It is a
+          multidisciplinary field that combines knowledge from computer science, psychology, and
+          design to create technology that is easy to use and accessible to all.<br />Learning about
+          HCI is important because it helps us to design technology that better meets the needs of
+          users, making it more efficient, effective, and enjoyable to use. HCI also helps to
+          address issues related to accessibility, ensuring that technology can be used by people
+          with different abilities and disabilities. Overall, understanding HCI can lead to the
+          creation of technology that is more user-centered and more useful in our daily lives.
+        </div>
+        <div class="gpt-conversation-icons">
+          <img src="images/paste.svg" />
+          <img src="images/upvote.svg" />
+          <img src="images/downvote.svg" />
+        </div>
+      </div>
+      <div class="user-conversation">
+        <div class="user-icon">
+          <div class="user-icon-text">K</div>
+        </div>
+        <div class="user-text">
+          What kind of subtopics are popular in HCI? Please list three of them.
+        </div>
+      </div>
+      <div class="gpt-conversation border" >
+        <div class="gpt-icon">
+          <img class="openai-icon" src="images/openai-icon.svg" alt="logos:openai-icon" />
+        </div>
+
+        <div class="gpt-text">
+          There are many subtopics within HCI, but here are three popular ones:
+          <ol>
+            <li>
+              User experience (UX) design: This focuses on creating technology that is
+              user-centered, easy to use, and meets the needs of the user. It involves studying user
+              behavior, designing interfaces, and testing prototypes to ensure that the technology
+              is intuitive and efficient.
+            </li>
+            <li>
+              Accessibility: This involves designing technology that can be used by people with
+              different abilities and disabilities. It includes considerations such as visual
+              impairments, hearing impairments, motor impairments, and cognitive impairments.
+            </li>
+            <li>
+              Interaction techniques: This area of HCI focuses on developing new ways for humans to
+              interact with computers. This includes touch screens, gestures, voice recognition, and
+              other forms of natural language processing.
+            </li>
+          </ol>
+        </div>
+        <div class="gpt-conversation-icons">
+          <img src="images/paste.svg" />
+          <img src="images/upvote.svg" />
+          <img src="images/downvote.svg" />
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom-section">
+      <div class="regenerate-button">
+        <img class="regenerate-button-icon" src="images/regenerate.svg" alt="regenerate" />
+        <div class="regenerate-button-text">Regenerate response</div>
+      </div>
+      <div class="message-input">
+        <input class="message-input-text" placeholder="Send a message..." id="hw2__input"></input>
+        <button class="send" id="hw2__send">
+          <img src="images/send.svg" alt="send"/>
+        </button>
+      </div>
+      <div class="warning-message">
+        <a href="https://help.openai.com/en/articles/6825453-chatgpt-release-notes" target="_blank"
+          ><span class="span0 inter-normal-black-12px">ChatGPT Mar 23 Version</span></a
+        >. Free Research Preview. ChatGPT may produce inaccurate information about people, places,
+        or facts.
+      </div>
+    </div>
+  </div>
+</body>
